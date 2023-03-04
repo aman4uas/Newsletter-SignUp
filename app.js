@@ -32,7 +32,7 @@ app.post("/", (req, res)=>{
     const url = "https://us9.api.mailchimp.com/3.0/lists/f603a80d0c"
     const options = {
         method: "POST",
-        auth: "aman4u.as@gmail.com:9d316e07db56e1886784d55192308b68-us9"
+        auth: "aman4u.as@gmail.com:cb85b4c7b5784cf94c7eb1b783b26c3d-us9"
     }
     const request = https.request(url,options, function(response){
         if(response.statusCode === 200){
@@ -60,10 +60,3 @@ app.post("/failure", (req, res)=>{
 app.listen(process.env.PORT || 3000, ()=>{
     console.log(`App listening on port 3000`)
 })
-
-
-//KEY
-//9d316e07db56e1886784d55192308b68-us9
-
-//List ID
-//f603a80d0c
